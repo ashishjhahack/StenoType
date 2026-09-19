@@ -1,18 +1,17 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import PopularTests from "@/components/PopularTests";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-
-      <main>
-        <h1 className="text-5xl font-bold tracking-tight text-white">
-          Master Steno
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Faster
-          </span>
-        </h1>
-      </main>
+      <Hero />
+      <Features />
+      <PopularTests />
+      <Footer />
     </>
   );
 }

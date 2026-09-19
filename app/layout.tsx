@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+
+// Intialize the Inter font with Latin subset
+const inter = Inter({ 
+  subsets: ["latin"] ,
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "StenoType",
@@ -13,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
+    <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
+      <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
