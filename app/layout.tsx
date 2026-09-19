@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Intialize the Inter font with Latin subset
 const inter = Inter({ 
@@ -28,7 +30,9 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          {children}
+          <Navbar />
+          <main>{children}</main>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
