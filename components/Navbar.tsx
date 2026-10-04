@@ -34,6 +34,10 @@ const NAV_LINKS = [
     href: "/dashboard",
   },
   {
+    label: "Leaderboard",
+    href: "/leaderboard",
+  },
+  {
     label: "About",
     href: "/about",
   },
