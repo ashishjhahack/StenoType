@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Test" ADD COLUMN     "targetWpm" INTEGER NOT NULL DEFAULT 60;
